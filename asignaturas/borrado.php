@@ -1,5 +1,5 @@
 <?php 
-    require_once( $_SERVER['DOCUMENT_ROOT'].'/PHPBBDD/config.php'); // conectar a la bd
+    require_once( $_SERVER['DOCUMENT_ROOT'].'/PHPBBDDExamenJMAR/config.php'); // conectar a la bd
 
 if (!$_GET['id']) {
     header('Location: listado.php');

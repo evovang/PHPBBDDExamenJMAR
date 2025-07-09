@@ -1,5 +1,5 @@
 <?php
-    require_once( $_SERVER['DOCUMENT_ROOT'].'/PHPBBDD/config.php'); // conectar a la bd
+    require_once( $_SERVER['DOCUMENT_ROOT'].'/PHPBBDDExamenJMAR/config.php'); // conectar a la bd
 
     // Redirigimos al listado si no se llega a la página desde el formulario
     if (!isset($_POST['id']) || !isset($_POST['nombre'])) {

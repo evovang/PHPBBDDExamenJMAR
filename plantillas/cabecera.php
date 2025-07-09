@@ -1,6 +1,6 @@
 <?php 
 // Varoables con la rutas tanto de HTML como de PHP. En PHP debe ir desde el documnet root y en HTML desde la ruta de inicio del sitio web
-$ruta = '/PHPBBDD/';
+$ruta = '/PHPBBDDExamenJMAR/';
 $rutaPHP = $_SERVER['DOCUMENT_ROOT'].$ruta;
 // echo $_SERVER['DOCUMENT_ROOT'].$ruta;
 
