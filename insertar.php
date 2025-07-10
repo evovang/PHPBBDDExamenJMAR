@@ -6,6 +6,7 @@ if (!isset($_POST['nombre'])) {
 }
 require_once('plantillas/cabecera.php');
 
+    $dni = $_POST['dni'];
     $nombre = $_POST['nombre'];
     $apellido1 = $_POST['apellido1'];
     $apellido2 = $_POST['apellido2'];
@@ -17,6 +18,7 @@ require_once('plantillas/cabecera.php');
 
     <h2>Alumno a insertar</h2>
     <ul>
+        <li>DNI: <?=$dni?></li>
         <li>Nombre: <?=$nombre?></li>
         <li>Apellido1: <?=$apellido1?></li>
         <li>Apellido2: <?=$apellido2?></li>
@@ -26,7 +28,7 @@ require_once('plantillas/cabecera.php');
 
     <?php 
         $consulta = 
-            "insert into alumnos (nombre,apellido1,apellido2,fecha_nac, email) values('$nombre','$apellido1', '$apellido2', '$fechaNac', '$email') ";
+            "insert into alumnos (dni,nombre,apellido1,apellido2,fecha_nac, email) values('$dni','$nombre','$apellido1', '$apellido2', '$fechaNac', '$email') ";
 
             /* $consulta = 
             'insert into alumnos (nombre,apellido1,apellido2,fecha_nac, email) values("'.$nombre.'","'.$apellido1.'", '$apellido2', '$fechaNac', '$email') ';*/

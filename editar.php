@@ -18,6 +18,7 @@ if (mysqli_num_rows($resultado)==0) {
 
 $fila = mysqli_fetch_array($resultado);
 $id = $fila['id'];
+$dni = $fila['dni'];
 $nombre=$fila['nombre'];
 $apellido1=$fila['apellido1'];
 $apellido2=$fila['apellido2'];
@@ -30,6 +31,13 @@ $email= $fila['email'];
     <h2>Editar los datos de un alumno</h2>
 
     <form action="actualizar.php" method="post">
+        
+        <div  class="control mb-3">
+            <label for="dni" class="col-sm-2 col-form-label">DNI:</label>
+            <input type="text" name="dni" id="dni" required value='<?=$dni?>' class="form-control">
+        </div>
+    
+    
         <div  class="control mb-3">
             <label for="nombre" class="col-sm-2 col-form-label">Nombre:</label>
             <input type="text" name="nombre" id="nombre" required value='<?=$nombre?>' class="form-control">

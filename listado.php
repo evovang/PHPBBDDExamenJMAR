@@ -7,6 +7,7 @@
         <thead class="table-dark">
             <tr>
                 <th>ID</th>
+                <th>DNI</th>
                 <th>Nombre</th>
                 <th>Apellido1</th>
                 <th>Apellido2</th>
@@ -38,6 +39,7 @@
             while(($fila = mysqli_fetch_array($filas))==true){
                 echo "<tr>\n";
                 echo "<td> ".$fila['id']." </td>\n";
+                echo "<td> ".$fila['dni']." </td>\n";
                 echo "<td> ".$fila['nombre']." </td>\n";
                 echo "<td> ".$fila['apellido1']." </td>\n";
                 echo "<td> ".$fila['apellido2']." </td>\n";

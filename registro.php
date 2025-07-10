@@ -6,6 +6,12 @@ require_once('plantillas/cabecera.php');
     <h2>Inscribir un alumno</h2>
 
     <form action="insertar.php" method="post">
+
+        <div class="control mb-3">
+            <label for="dni" class="col-sm-2 col-form-label">DNI:</label>
+            <input type="text" name="dni" id="dni" required class="form-control">
+        </div>
+
         <div class="control mb-3">
             <label for="nombre" class="col-sm-2 col-form-label">Nombre:</label>
             <input type="text" name="nombre" id="nombre" required class="form-control">
